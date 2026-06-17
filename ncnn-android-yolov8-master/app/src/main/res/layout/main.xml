@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101418"
+    android:fitsSystemWindows="true">
+
+    <SurfaceView
+        android:id="@+id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomControlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/overlay_panel_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSwitchCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_overlay_background"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/switch_camera_short"
+            android:textColor="#172033"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTask"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/spinner_overlay_background"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/task_array"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" />
+
+        <Spinner
+            android:id="@+id/spinnerModel"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1.25"
+            android:background="@drawable/spinner_overlay_background"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/model_array"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCPUGPU"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="0.85"
+            android:background="@drawable/spinner_overlay_background"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/cpugpu_array"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

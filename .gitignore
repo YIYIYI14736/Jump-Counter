@@ -1,0 +1,72 @@
+# Local toolchains and downloaded packages
+tools/
+*.zip
+
+# External source/library downloads kept outside version control
+ncnn-master/
+ncnn-*-android-vulkan/
+ncnn-android-yolov8-master/app/src/main/jni/_downloads/
+ncnn-android-yolov8-master/app/src/main/jni/opencv-mobile-*-android/
+ncnn-android-yolov8-master/app/src/main/jni/ncnn-*-android-vulkan/
+
+# Android local/build artifacts
+ncnn-android-yolov8-master/.gradle/
+ncnn-android-yolov8-master/.idea/
+ncnn-android-yolov8-master/build/
+ncnn-android-yolov8-master/app/.cxx/
+ncnn-android-yolov8-master/app/build/
+ncnn-android-yolov8-master/local.properties
+*.apk
+*.aab
+
+# Python cache and training outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+DeskGuard-Model/training/deskguard_yolo/runs/
+DeskGuard-Model/runs/
+*.pt
+*.onnx
+*.torchscript
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# --- Archive additions (2026-06-17) ---
+
+# Keystore files (sensitive - never commit)
+*.jks
+
+# Video and media outputs
+*.mp4
+*.avi
+*.mov
+
+# Debug/test CSV outputs (keep training data CSVs under training/)
+*_debug*.csv
+debug_*.csv
+test_results*.csv
+simple.csv
+jumprope_*.csv
+
+# Report frame screenshots
+JumpRope-Model/report_screenshots/
+
+# Temporary scripts
+_tmp_*.py
+
+# Node.js dependencies
+node_modules/
+
+# Non-project directories
+tencent/
+
+# PowerShell artifacts
+$null
+
+# Test result images
+test_result_*.jpg
+test_result_*.png

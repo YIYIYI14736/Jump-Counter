@@ -1,0 +1,8 @@
+path: datasets/jumprope_pose
+train: images/train
+val: images/val
+test:
+kpt_shape: [17, 3]
+
+names:
+  0: person
